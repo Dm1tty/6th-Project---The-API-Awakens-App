@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		666ADB0C29E2C33E0198A15F /* Pods_TheAPIAwakensApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D22041ACB3BEBC8819A035 /* Pods_TheAPIAwakensApp.framework */; };
+		9A129946231DE532007B1385 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129945231DE532007B1385 /* Species.swift */; };
+		9A129948231DE554007B1385 /* SpeciesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129947231DE554007B1385 /* SpeciesResult.swift */; };
+		9A12994A231DE57A007B1385 /* Designation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129949231DE57A007B1385 /* Designation.swift */; };
+		9A12994C231DE596007B1385 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A12994B231DE596007B1385 /* Films.swift */; };
+		9A12994E231DE5B9007B1385 /* FilmsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A12994D231DE5B9007B1385 /* FilmsResult.swift */; };
+		9A129950231DE5D9007B1385 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A12994F231DE5D9007B1385 /* Planets.swift */; };
 		9A6D1EE8231C7EFB0011748E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1EE7231C7EFB0011748E /* AppDelegate.swift */; };
 		9A6D1EEA231C7EFB0011748E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1EE9231C7EFB0011748E /* ViewController.swift */; };
 		9A6D1EED231C7EFB0011748E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D1EEB231C7EFB0011748E /* Main.storyboard */; };
 		9A6D1EEF231C7EFD0011748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D1EEE231C7EFD0011748E /* Assets.xcassets */; };
 		9A6D1EF2231C7EFD0011748E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6D1EF0231C7EFD0011748E /* LaunchScreen.storyboard */; };
+		9A6D1F03231C96CC0011748E /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F02231C96CC0011748E /* PeopleViewController.swift */; };
+		9A6D1F05231CB0800011748E /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F04231CB0800011748E /* Vehicles.swift */; };
+		9A6D1F07231CB2BD0011748E /* StarshipsResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F06231CB2BD0011748E /* StarshipsResults.swift */; };
+		9A6D1F09231CB2E70011748E /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F08231CB2E70011748E /* Characters.swift */; };
+		9A6D1F0B231CB3150011748E /* CharactersResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F0A231CB3150011748E /* CharactersResult.swift */; };
+		9A6D1F0D231CB32E0011748E /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F0C231CB32E0011748E /* Gender.swift */; };
+		9A6D1F0F231CB3450011748E /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6D1F0E231CB3450011748E /* JSONSchemaSupport.swift */; };
+		9AE2EEAF231F2279005719A2 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE2EEAE231F2279005719A2 /* VehiclesViewController.swift */; };
+		9AE2EEB1231F2A2C005719A2 /* StarshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE2EEB0231F2A2C005719A2 /* StarshipsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D22041ACB3BEBC8819A035 /* Pods_TheAPIAwakensApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheAPIAwakensApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEAAD9CFD11B6F8E81E07AC /* Pods-TheAPIAwakensApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheAPIAwakensApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheAPIAwakensApp/Pods-TheAPIAwakensApp.debug.xcconfig"; sourceTree = "<group>"; };
+		799C4E9690150BA5DA2D8124 /* Pods-TheAPIAwakensApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheAPIAwakensApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheAPIAwakensApp/Pods-TheAPIAwakensApp.release.xcconfig"; sourceTree = "<group>"; };
+		9A129945231DE532007B1385 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		9A129947231DE554007B1385 /* SpeciesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesResult.swift; sourceTree = "<group>"; };
+		9A129949231DE57A007B1385 /* Designation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designation.swift; sourceTree = "<group>"; };
+		9A12994B231DE596007B1385 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
+		9A12994D231DE5B9007B1385 /* FilmsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResult.swift; sourceTree = "<group>"; };
+		9A12994F231DE5D9007B1385 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		9A6D1EE4231C7EFB0011748E /* TheAPIAwakensApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAPIAwakensApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6D1EE7231C7EFB0011748E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6D1EE9231C7EFB0011748E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +47,15 @@
 		9A6D1EEE231C7EFD0011748E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6D1EF1231C7EFD0011748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6D1EF3231C7EFD0011748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6D1F02231C96CC0011748E /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		9A6D1F04231CB0800011748E /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		9A6D1F06231CB2BD0011748E /* StarshipsResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsResults.swift; sourceTree = "<group>"; };
+		9A6D1F08231CB2E70011748E /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		9A6D1F0A231CB3150011748E /* CharactersResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResult.swift; sourceTree = "<group>"; };
+		9A6D1F0C231CB32E0011748E /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		9A6D1F0E231CB3450011748E /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
+		9AE2EEAE231F2279005719A2 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		9AE2EEB0231F2A2C005719A2 /* StarshipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666ADB0C29E2C33E0198A15F /* Pods_TheAPIAwakensApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C452B3DA72E3F9392D5630A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D22041ACB3BEBC8819A035 /* Pods_TheAPIAwakensApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A6D1EDB231C7EFB0011748E = {
 			isa = PBXGroup;
 			children = (
 				9A6D1EE6231C7EFB0011748E /* TheAPIAwakensApp */,
 				9A6D1EE5231C7EFB0011748E /* Products */,
+				EFA8BE97CC7EBEDCE5871588 /* Pods */,
+				8C452B3DA72E3F9392D5630A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +99,46 @@
 		9A6D1EE6231C7EFB0011748E /* TheAPIAwakensApp */ = {
 			isa = PBXGroup;
 			children = (
+				9A6D1EFF231C95270011748E /* Models */,
 				9A6D1EE7231C7EFB0011748E /* AppDelegate.swift */,
 				9A6D1EE9231C7EFB0011748E /* ViewController.swift */,
 				9A6D1EEB231C7EFB0011748E /* Main.storyboard */,
 				9A6D1EEE231C7EFD0011748E /* Assets.xcassets */,
 				9A6D1EF0231C7EFD0011748E /* LaunchScreen.storyboard */,
 				9A6D1EF3231C7EFD0011748E /* Info.plist */,
+				9A6D1F02231C96CC0011748E /* PeopleViewController.swift */,
+				9AE2EEAE231F2279005719A2 /* VehiclesViewController.swift */,
+				9AE2EEB0231F2A2C005719A2 /* StarshipsViewController.swift */,
 			);
 			path = TheAPIAwakensApp;
+			sourceTree = "<group>";
+		};
+		9A6D1EFF231C95270011748E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A6D1F04231CB0800011748E /* Vehicles.swift */,
+				9A6D1F06231CB2BD0011748E /* StarshipsResults.swift */,
+				9A6D1F08231CB2E70011748E /* Characters.swift */,
+				9A6D1F0A231CB3150011748E /* CharactersResult.swift */,
+				9A6D1F0C231CB32E0011748E /* Gender.swift */,
+				9A6D1F0E231CB3450011748E /* JSONSchemaSupport.swift */,
+				9A129945231DE532007B1385 /* Species.swift */,
+				9A129947231DE554007B1385 /* SpeciesResult.swift */,
+				9A129949231DE57A007B1385 /* Designation.swift */,
+				9A12994B231DE596007B1385 /* Films.swift */,
+				9A12994D231DE5B9007B1385 /* FilmsResult.swift */,
+				9A12994F231DE5D9007B1385 /* Planets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFA8BE97CC7EBEDCE5871588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AEAAD9CFD11B6F8E81E07AC /* Pods-TheAPIAwakensApp.debug.xcconfig */,
+				799C4E9690150BA5DA2D8124 /* Pods-TheAPIAwakensApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A6D1EF6231C7EFD0011748E /* Build configuration list for PBXNativeTarget "TheAPIAwakensApp" */;
 			buildPhases = (
+				521799BB4EA5EC2D9A849F01 /* [CP] Check Pods Manifest.lock */,
 				9A6D1EE0231C7EFB0011748E /* Sources */,
 				9A6D1EE1231C7EFB0011748E /* Frameworks */,
 				9A6D1EE2231C7EFB0011748E /* Resources */,
+				AC5092FF39B2482AEA0D2E7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +209,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		521799BB4EA5EC2D9A849F01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheAPIAwakensApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5092FF39B2482AEA0D2E7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TheAPIAwakensApp/Pods-TheAPIAwakensApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheAPIAwakensApp/Pods-TheAPIAwakensApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A6D1EE0231C7EFB0011748E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A129948231DE554007B1385 /* SpeciesResult.swift in Sources */,
+				9A12994C231DE596007B1385 /* Films.swift in Sources */,
+				9A6D1F0F231CB3450011748E /* JSONSchemaSupport.swift in Sources */,
+				9A6D1F0B231CB3150011748E /* CharactersResult.swift in Sources */,
+				9A12994E231DE5B9007B1385 /* FilmsResult.swift in Sources */,
+				9A6D1F03231C96CC0011748E /* PeopleViewController.swift in Sources */,
+				9A6D1F09231CB2E70011748E /* Characters.swift in Sources */,
+				9A12994A231DE57A007B1385 /* Designation.swift in Sources */,
 				9A6D1EEA231C7EFB0011748E /* ViewController.swift in Sources */,
+				9AE2EEAF231F2279005719A2 /* VehiclesViewController.swift in Sources */,
+				9AE2EEB1231F2A2C005719A2 /* StarshipsViewController.swift in Sources */,
+				9A6D1F0D231CB32E0011748E /* Gender.swift in Sources */,
 				9A6D1EE8231C7EFB0011748E /* AppDelegate.swift in Sources */,
+				9A129950231DE5D9007B1385 /* Planets.swift in Sources */,
+				9A6D1F05231CB0800011748E /* Vehicles.swift in Sources */,
+				9A129946231DE532007B1385 /* Species.swift in Sources */,
+				9A6D1F07231CB2BD0011748E /* StarshipsResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +421,7 @@
 		};
 		9A6D1EF7231C7EFD0011748E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEAAD9CFD11B6F8E81E07AC /* Pods-TheAPIAwakensApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +440,7 @@
 		};
 		9A6D1EF8231C7EFD0011748E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799C4E9690150BA5DA2D8124 /* Pods-TheAPIAwakensApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
