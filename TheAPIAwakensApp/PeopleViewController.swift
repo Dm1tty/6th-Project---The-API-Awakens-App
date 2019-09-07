@@ -67,6 +67,8 @@ class PeopleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
   
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -146,8 +148,35 @@ class PeopleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                             
                             self.updatePicker()
                             finished()
-                        } catch let error {
+                        } catch {
                             print(error)
+                            var message = ""
+                            guard let httpResponse = response as? HTTPURLResponse else {
+                                print("Request failed.")
+                                message = "Request failed."
+                                return
+                            }
+                            switch httpResponse.statusCode{
+                                
+                                
+                            case 300...399:
+                                print("Redirection error. Try again later")
+                                 message = "Redirection error. Try again later"
+                            case 400...499:
+                                print("Error happened on the client's side. Try again later")
+                                 message =  "Error happened on the client's side. Try again later"
+                            case 500...599:
+                                print("Server error. Try again later")
+                                  message =  "Server error. Try again later"
+                            default:
+                                print("Unknown error")
+                                message =  "Unknown error"
+                                
+                                let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                                
+                                
+                                self.present(alertController, animated: true, completion: nil)
+                            }
     
                             
                         }

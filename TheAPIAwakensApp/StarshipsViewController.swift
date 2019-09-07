@@ -17,8 +17,6 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var classLabel: UILabel!
     @IBOutlet weak var crewLabel: UILabel!
     
-    
-      @IBOutlet weak var priceSwitcher: UISegmentedControl!
     @IBOutlet weak var pickerView: UIPickerView!
      @IBOutlet weak var unitsSwitcher: UISegmentedControl!
     @IBOutlet weak var smallestLabel: UILabel!
@@ -58,14 +56,6 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
         }
     }
     
-    @IBAction func moneyConversion(_ sender: Any) {
-        if let priceInt = Int.parse(from: costLabel.text!){
-            if priceSwitcher.selectedSegmentIndex==1{
-                let price = Double(priceInt) * 1.3
-                costLabel.text = "Cost: $\(price)"
-            }
-        }
-    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -82,6 +72,35 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
             self.pickerView!.reloadAllComponents()
             
         }}
+    
+    
+    @IBAction func spaceshipUSDClicked(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "What's the US exchange rate?", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input US exchange rate here..."
+        })
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            
+            if let exchangeText = alert.textFields?.first?.text {
+                if let exchange = Double(exchangeText) {
+                    if exchange>0{
+                        if let priceInt = Int.parse(from: self.costLabel.text!){
+                            self.costLabel.text = "Cost: " + String(format: "%.2f", Double(priceInt) * exchange) + "$"
+                        }}
+                    else{
+                        return
+                    }
+                }
+            }}))
+        
+        self.present(alert, animated: true)
+        
+        
+    }
     
     
     func getStarships(urlToGet: String, finished: @escaping () -> Void){
@@ -102,6 +121,33 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
                             finished()
                         } catch let error {
                             print(error)
+                            var message = ""
+                            guard let httpResponse = response as? HTTPURLResponse else {
+                                print("Request failed.")
+                                message = "Request failed."
+                                return
+                            }
+                            switch httpResponse.statusCode{
+                                
+                                
+                            case 300...399:
+                                print("Redirection error. Try again later")
+                                message = "Redirection error. Try again later"
+                            case 400...499:
+                                print("Error happened on the client's side. Try again later")
+                                message =  "Error happened on the client's side. Try again later"
+                            case 500...599:
+                                print("Server error. Try again later")
+                                message =  "Server error. Try again later"
+                            default:
+                                print("Unknown error")
+                                message =  "Unknown error"
+                                
+                                let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                                
+                                
+                                self.present(alertController, animated: true, completion: nil)
+                            }
                             
                             
                         }
@@ -115,8 +161,7 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        unitsSwitcher.selectedSegmentIndex = 0
-        priceSwitcher.selectedSegmentIndex = 0
+       
         
         lengthLabel.text = "Length: \(starships[row].length)m"
         
