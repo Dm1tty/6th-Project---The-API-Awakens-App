@@ -122,7 +122,7 @@ class VehiclesViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             // Do something with this number
             if unitsSwitcher.selectedSegmentIndex==0{
                 //metric
-                lengthLabel.text = "Length:\(length)m"
+                lengthLabel.text = "Length:\(Double(length)/330)m"
             }
             else{
                 //english
@@ -164,6 +164,7 @@ class VehiclesViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
+       unitsSwitcher.selectedSegmentIndex = 0
          lengthLabel.text = "Length: \(vehicles[row].length)m"
         
         nameLabel.text = vehicles[row].name

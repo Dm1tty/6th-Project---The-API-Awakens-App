@@ -47,7 +47,7 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
             // Do something with this number
             if unitsSwitcher.selectedSegmentIndex==0{
                 //metric
-                lengthLabel.text = "Length:\(length)"
+                lengthLabel.text = "Length:\(Double(length)/330)m"
             }
             else{
                 //english
@@ -161,7 +161,7 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-       
+        unitsSwitcher.selectedSegmentIndex = 0
         
         lengthLabel.text = "Length: \(starships[row].length)m"
         

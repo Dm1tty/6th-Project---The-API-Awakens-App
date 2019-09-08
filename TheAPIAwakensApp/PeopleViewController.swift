@@ -57,7 +57,7 @@ class PeopleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             
             if unitsSwitcher.selectedSegmentIndex==0{
                 //metric
-                heightLabel.text = "Height:\(height)"
+                heightLabel.text = "Height:\(Double(height)/3300)m"
             }
             else{
                 //english
@@ -89,7 +89,7 @@ class PeopleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        
+         unitsSwitcher.selectedSegmentIndex = 0
         var height = Double(characters[row].height)
         heightLabel.text = "Height: \(height!/100)m"
         
