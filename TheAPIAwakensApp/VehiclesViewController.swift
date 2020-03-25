@@ -192,8 +192,8 @@ class VehiclesViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let largestVehicle = sortedVehicles.first
         let smallestVehicle = sortedVehicles.last
         DispatchQueue.main.async {
-            self.smallestLabel.text = "Smallest \(smallestVehicle!.name)"
-            self.largestLabel.text = "Largest \(largestVehicle!.name)"
+            self.smallestLabel.text = "Smallest: \(smallestVehicle!.name)"
+            self.largestLabel.text = "Largest: \(largestVehicle!.name)"
         }
         
     }

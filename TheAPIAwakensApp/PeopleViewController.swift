@@ -195,8 +195,8 @@ class PeopleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         let largestCharacter = sortedCharacters.first
         let smallestCharacter = sortedCharacters.last
          DispatchQueue.main.async {
-            self.smallestLabel.text = "Smallest \(smallestCharacter!.name)"
-            self.largestLabel.text = "Largest \(largestCharacter!.name)"
+            self.smallestLabel.text = "Smallest: \(smallestCharacter!.name)"
+            self.largestLabel.text = "Largest: \(largestCharacter!.name)"
         }
         
     }

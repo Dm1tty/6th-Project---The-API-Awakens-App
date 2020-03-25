@@ -189,8 +189,8 @@ class StarshipsViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let largestVehicle = sortedStarships.first
         let smallestVehicle = sortedStarships.last
         DispatchQueue.main.async {
-            self.smallestLabel.text = "Smallest \(smallestVehicle!.name)"
-            self.largestLabel.text = "Largest \(largestVehicle!.name)"
+            self.smallestLabel.text = "Smallest: \(smallestVehicle!.name)"
+            self.largestLabel.text = "Largest: \(largestVehicle!.name)"
         }
         
     }
